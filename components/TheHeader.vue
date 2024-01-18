@@ -10,6 +10,7 @@
       <div class="flex gap-x-12">
         <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
         <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+        <a href="/info" class="text-sm font-semibold leading-6 text-gray-900">Information</a>
         <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</a>
       </div>
     </nav>

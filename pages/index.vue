@@ -13,8 +13,13 @@
         </UButton>
       </li>
       <li class="mt-4">
+        <UButton icon="i-heroicons-chevron-right-20-solid" size="md" :trailing="false" to="/info">
+          Information (as WordPress REST API Data Sample)
+        </UButton>
+      </li>
+      <li class="mt-4">
         <UButton icon="i-heroicons-chevron-right-20-solid" size="md" :trailing="false" to="/blog">
-          Blog
+          Blog (as microCMS Data Sample)
         </UButton>
       </li>
     </ul>
