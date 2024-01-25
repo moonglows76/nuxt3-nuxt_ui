@@ -6,6 +6,5 @@ export default defineEventHandler(async () => {
   ).then((res) => {
     return res.map((post) => `/info/${post.slug}`)
   })
-  console.log(posts)
   return posts
 })

@@ -46,8 +46,10 @@ const ui = /*ui*/ ref({
   background: 'bg-white dark:bg-slate-900'
 })
 
-const posts = await $fetch('/api/posts')
-console.log('posts: ', posts);
+// const posts = await $fetch('/api/posts')
+// console.log('posts: ', posts);
+// const posts = await $fetch('/api/blog_posts')
+// console.log('blog_posts: ', blog_posts);
 
 </script>
 
