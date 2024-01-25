@@ -45,6 +45,10 @@ useHead({
 const ui = /*ui*/ ref({
   background: 'bg-white dark:bg-slate-900'
 })
+
+const posts = await $fetch('/api/posts')
+console.log('posts: ', posts);
+
 </script>
 
 <style>
