@@ -27,10 +27,11 @@
 </template>
 
 <script setup>
-const ogTitle = "Top";
-const ogDescription = "Topページです";
+const ogTitle = "Nuxt UI & Sitemap Test Site";
+const ogDescription = "Nuxt UI & Sitemap Test SiteのTopページです";
 useHead({
   title: ogTitle,
+  titleTemplate: "",
   meta: [
     { hid: "description", name: "description", content: ogDescription },
     { property: "og:type", content: "article" },
