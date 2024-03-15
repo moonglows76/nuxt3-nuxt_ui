@@ -1,13 +1,15 @@
 import nodemailer from "nodemailer";
 
+const runtimeConfig = useRuntimeConfig();
+
 // Or use SMTP if you feel like
 const transporter = nodemailer.createTransport({
-  host: "sv23.minibird.netowl.jp",
-  port: 587,
+  host: runtimeConfig.mailHost,
+  port: runtimeConfig.mailPort,
   secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
-    user: "mori@codingdesign.jp",
-    pass: "mfori943",
+    user: runtimeConfig.mailUsername,
+    pass: runtimeConfig.mailPassword,
   },
 });
 
@@ -16,7 +18,7 @@ export default defineEventHandler(async (event) => {
 
   transporter.sendMail({
     from: body.email,
-    to: "mori@codingdesign.jp",
+    to: runtimeConfig.mailUsername,
     subject: "新しい問い合わせメールが届きました（テスト送信）",
     text: `新しい問い合わせメールが届きました。\n\nメールアドレス：\n${body.email}\n\nお問い合わせ内容：\n${body.text}`,
   });

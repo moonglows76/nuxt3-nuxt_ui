@@ -27,4 +27,10 @@ export default defineNuxtConfig({
       '/api/__sitemap__/urls',
     ]
   },
+  runtimeConfig: {
+    mailHost: process.env.MAIL_HOST,
+    mailPort: process.env.MAIL_PORT,
+    mailUsername: process.env.MAIL_USERNAME,
+    mailPassword: process.env.MAIL_PASSWORD,
+  },
 })
