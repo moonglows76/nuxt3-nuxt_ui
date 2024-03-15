@@ -11,14 +11,15 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.8.2",
+    "nuxt": "^3.10.3",
     "nuxt-simple-sitemap": "^4.1.17",
-    "vue": "^3.3.10",
-    "vue-router": "^4.2.5"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.11.0",
+    "@nuxt/ui": "^2.14.2",
+    "nuxt-mail": "^4.0.3",
     "nuxt-microcms-module": "^3.0.2",
-    "sanitize-html": "^2.11.0"
+    "sanitize-html": "^2.12.1"
   }
 }
