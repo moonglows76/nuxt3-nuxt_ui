@@ -14,7 +14,17 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     'nuxt-simple-sitemap',
     'nuxt-microcms-module',
+    "nuxt-module-feed",
   ],
+  feed: {
+    sources: [
+      {
+        path: "/feed.xml", // The route to your feed.
+        type: "rss2", // Can be: rss2, atom1, json1
+        cacheTime: 60 * 15, // How long should the feed be cached
+      },
+    ]
+  },
   site: {
     url: 'https://example.com',
   },
